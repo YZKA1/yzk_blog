@@ -45,11 +45,11 @@ app.get("/login", (req, res) => {
 
 //  要注册新用户了
 app.post("/register", (req, res) => {
-  // 完成用户注册的业务逻辑
+  // 完成用户注册的业务逻辑11111
 
   const body = req.body;
 
-  // 判断用户输入的数据是否完整
+  // 判断用户输入的数据是否完整111111
 
   if(body.username.trim().length <= 0 || body.password.trim().length <= 0 || body.nickname.trim().length <=0) {
       return res.send({msg:'请填写完整的表单数据在注册用户!',status:401})
